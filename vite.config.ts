@@ -6,7 +6,7 @@ import path from 'path'
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'lib/main.js'),
+      entry: path.resolve(__dirname, 'src/main.ts'),
       name: 'MyLib',
       fileName: (format) => `my-lib.${format}.js`
     },
