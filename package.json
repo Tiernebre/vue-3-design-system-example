@@ -12,7 +12,6 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "vite",
     "build": "tsc --noEmit && rollup -c && tsc --emitDeclarationOnly",
   },
   "dependencies": {
