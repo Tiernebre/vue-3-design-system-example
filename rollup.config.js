@@ -7,10 +7,7 @@ const config = {
   external: [],
 
   plugins: [
-    babel({
-      extensions: ['.ts', '.tsx'],
-      include: ['src/**/*'],
-    }),
+    babel(),
   ],
 
   output: [
