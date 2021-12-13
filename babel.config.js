@@ -6,6 +6,6 @@ module.exports = {
     "@babel/typescript"
   ],
   plugins: [
-    "@vue/babel-plugin-jsx"
+    isVue3 && "@vue/babel-plugin-jsx"
   ]
 }
