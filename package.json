@@ -39,6 +39,8 @@
     "@vue/babel-plugin-jsx": "^1.1.1",
     "@vue/babel-preset-jsx": "^1.2.4",
     "@vue/composition-api": "^1.4.1",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
     "rimraf": "^3.0.2",
     "rollup": "^2.61.1",
     "rollup-plugin-postcss": "^4.0.2",
