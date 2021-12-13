@@ -12,6 +12,7 @@
     "declaration": true,
     "target": "esnext",
     "module": "esnext",
+    "jsx": "preserve",
     "strict": true
   },
   "include": [
