@@ -3,11 +3,15 @@ import resolve from '@rollup/plugin-node-resolve';
 import { babel } from '@rollup/plugin-babel';
 import pkg from './package.json';
 import { uglify } from 'rollup-plugin-uglify'
+import { isVue2 } from 'vue-demi'
 
 const extensions = [
   '.ts', '.tsx'
 ];
 
+const outputBundleName = 'vue-ds'
+const outputDirectoryName = 'dist/' + (isVue2 ? 'vue-2' : 'vue') + '/'
+console.log('output directory name = ', outputDirectoryName)
 
 const config = {
   input: 'src/index.ts',
@@ -32,11 +36,11 @@ const config = {
 
   output: [
     {
-      file: pkg.module,
+      file: `${outputDirectoryName}${outputBundleName}.es.js`,
       format: 'es'
     },
     {
-      file: pkg.main,
+      file: `${outputDirectoryName}${outputBundleName}.umd.js`,
       format: 'cjs'
     }
   ]
