@@ -12,7 +12,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "pnpm test:types && rollup -c && pnpm build:types",
+    "build": "pnpm test:types && pnpm clean && rollup -c && pnpm build:types",
     "build:types": "tsc --emitDeclarationOnly",
     "test:types": "tsc --noEmit"
   },
