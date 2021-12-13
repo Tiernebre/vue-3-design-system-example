@@ -12,6 +12,13 @@ const config = {
       babelHelpers: 'bundled',
       include: ['src/**/*'],
     }),
+  ],
+
+  output: [
+    {
+      file: 'dist/test.js',
+      format: 'es'
+    }
   ]
 };
 
