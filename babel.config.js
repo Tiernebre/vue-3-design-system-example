@@ -4,13 +4,7 @@ module.exports = {
   presets: [
     "@babel/env",
     "@babel/typescript",
-    isVue2 && [
-      '@vue/babel-preset-jsx',
-      {
-        compositionAPI: true,
-        injectH: true
-      },
-    ],
+    isVue2 && '@vue/babel-preset-jsx',
   ].filter(Boolean),
   plugins: [
     isVue3 && "@vue/babel-plugin-jsx"
