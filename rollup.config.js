@@ -29,12 +29,7 @@ const config = {
       include: ['src/**/*'],
     }),
 
-    postcss({
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      }
-    })
+    postcss()
   ],
 
   output: [
