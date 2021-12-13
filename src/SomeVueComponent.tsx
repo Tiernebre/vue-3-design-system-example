@@ -1,11 +1,11 @@
-import { defineComponent } from 'vue-demi'
+import { ButtonHTMLAttributes, defineComponent } from 'vue-demi'
 
 type Props = {
   /**
    * WHAT.THE.FUCK
    */
   wtf: string;
-}
+} & ButtonHTMLAttributes;
 
 const SomeVueComponent = defineComponent<Props>({
   render () {
