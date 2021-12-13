@@ -14,7 +14,6 @@
     "clean": "rimraf dist",
     "dev": "vite",
     "build": "tsc --noEmit && rollup -c && tsc --emitDeclarationOnly",
-    "preview": "vite preview"
   },
   "dependencies": {
     "vue-demi": "^0.12.1"
