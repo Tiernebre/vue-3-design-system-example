@@ -9,7 +9,6 @@ const extensions = [
 
 const outputBundleName = 'vue-ds'
 const outputDirectoryName = 'dist/' + (isVue2 ? 'vue-2' : 'vue') + '/'
-console.log('output directory name = ', outputDirectoryName)
 
 const config = {
   input: 'src/index.ts',
