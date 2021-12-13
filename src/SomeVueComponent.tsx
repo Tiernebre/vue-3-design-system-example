@@ -1,4 +1,5 @@
 import { ref, defineComponent } from 'vue-demi'
+import { SomeOtherComponent } from './SomeOtherComponent'
 
 type SomeVueComponentProps = {
   /**
@@ -28,6 +29,7 @@ const SomeVueComponent = defineComponent<SomeVueComponentProps>({
       <p>State `numberOfClicks` = {numberOfClicks.value}</p>
       <button onClick={onClick}>Click!</button>
       <button onClick={emitCoolEvent}>COOL!</button>
+      <SomeOtherComponent />
     </div>
   }
 })
