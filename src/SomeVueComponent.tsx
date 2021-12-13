@@ -7,8 +7,17 @@ type Props = {
   wtf: string;
 }
 
-export const SomeVueComponent = defineComponent<Props>({
+const SomeVueComponent = defineComponent<Props>({
   render () {
     return <div>HI: {this.wtf}</div>
   }
 })
+
+SomeVueComponent.props = {
+  wtf: {
+    type: String,
+    required: true
+  }
+}
+
+export { SomeVueComponent }
