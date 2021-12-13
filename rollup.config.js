@@ -30,9 +30,6 @@ const config = {
     }),
 
     postcss({
-      config: {
-        path: "./postcss.config.js",
-      },
       extensions: [".css"],
       extract: true,
       minimize: true,
