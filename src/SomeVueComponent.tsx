@@ -35,7 +35,7 @@ const SomeVueComponent = defineComponent<SomeVueComponentProps>({
 })
 
 SomeVueComponent.props = {
-  wtf: {
+  message: {
     type: String,
     required: true
   }
