@@ -1,18 +1,24 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "declaration": true,
-    "declarationDir": "dist/types",
-    "useDefineForClassFields": true,
-    "module": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
     "moduleResolution": "node",
-    "strict": true,
-    "jsx": "preserve",
-    "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
-    "rootDir": "src",
-    "outDir": "dist"
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "declarationDir": "dist/types",
+    "declaration": true,
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

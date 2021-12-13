@@ -9,7 +9,6 @@ const config = {
   plugins: [
     babel({
       extensions: ['.ts', '.tsx'],
-      babelHelpers: 'bundled',
       include: ['src/**/*'],
     }),
   ],
