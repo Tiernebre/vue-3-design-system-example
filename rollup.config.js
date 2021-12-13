@@ -21,7 +21,7 @@ const config = {
 
     babel({
       extensions,
-      babelHelpers: 'bundled',
+      babelHelpers: 'runtime',
       include: ['src/**/*'],
     }),
   ],
