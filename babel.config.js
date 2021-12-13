@@ -13,5 +13,5 @@ module.exports = {
   ],
   plugins: [
     isVue3 && "@vue/babel-plugin-jsx"
-  ]
+  ].filter(Boolean)
 }
