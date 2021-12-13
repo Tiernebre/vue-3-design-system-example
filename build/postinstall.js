@@ -9,12 +9,12 @@ const isVue2 = +version.split('.')[0] === 2
 
 if (isVue2) {
   console.log('[Vue 3 Design System Example] Switch main field for Vue 2')
-  pkg.main = 'lib2/index.js'
-  pkg.module = 'es2/index.js'
+  pkg.main = 'dist/vue-2/vue-ds.umd.js'
+  pkg.module = 'dist/vue-2/vue-ds.es.js'
 } else {
   console.log('[Vue 3 Design System Example] Switch main field for Vue 3')
-  pkg.main = 'lib/index.js'
-  pkg.module = 'es/index.js'
+  pkg.main = 'dist/vue/vue-ds.umd.js'
+  pkg.module = 'dist/vue/vue-ds.es.js'
 }
 
 fs.writeFileSync(
