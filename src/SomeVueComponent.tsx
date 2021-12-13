@@ -1,13 +1,13 @@
 import { defineComponent } from 'vue-demi'
 
-type Props = {
+type SomeVueComponentProps = {
   /**
    * WHAT.THE.FUCK
    */
   wtf: string;
 }
 
-const SomeVueComponent = defineComponent<Props>({
+const SomeVueComponent = defineComponent<SomeVueComponentProps>({
   render () {
     return <div>HI: {this.wtf}</div>
   }
