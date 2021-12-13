@@ -1,3 +1,1 @@
-import HelloWorld from './HelloWorld.vue'
-
-export { HelloWorld }
+export * from './HelloWorld'
