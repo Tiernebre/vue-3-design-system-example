@@ -1,8 +1,8 @@
 {
   "name": "vue-3-design-system-example",
   "version": "0.0.0",
-  "main": "./dist/vue-2/vue-ds.umd.js",
-  "module": "./dist/vue-2/vue-ds.es.js",
+  "main": "./dist/vue/vue-ds.umd.js",
+  "module": "./dist/vue/vue-ds.es.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "pnpm clean && pnpm switch:3 && pnpm test:types && pnpm build:2 && pnpm build:3 && pnpm build:types",
@@ -31,9 +31,7 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@vitejs/plugin-vue": "^2.0.0",
-    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
     "@vue/babel-plugin-jsx": "^1.1.1",
-    "@vue/babel-preset-app": "^4.5.15",
     "@vue/babel-preset-jsx": "^1.2.4",
     "@vue/composition-api": "^1.4.1",
     "rimraf": "^3.0.2",
