@@ -21,7 +21,7 @@ const config = {
 
     babel({
       extensions,
-      babelHelpers: 'runtime',
+      babelHelpers: 'inline',
       include: ['src/**/*'],
     }),
   ],
