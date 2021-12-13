@@ -16,7 +16,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.26"
+    "vue": "^3.2.26",
+    "vue-demi": "^0.12.1"
   },
   "devDependencies": {
     "@types/node": "^16.11.12",
