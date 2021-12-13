@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "rollup -c",
+    "build": "rollup -c && tsc",
     "preview": "vite preview"
   },
   "dependencies": {
