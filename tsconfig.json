@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "declaration": true,
-    "declarationDir": "dist/dts",
+    "declarationDir": "dist/types",
     "useDefineForClassFields": true,
     "module": "esnext",
     "moduleResolution": "node",
