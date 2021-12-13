@@ -14,6 +14,8 @@
     "clean": "rimraf dist",
     "build": "pnpm test:types && pnpm clean && rollup -c && pnpm build:types",
     "build:types": "tsc --emitDeclarationOnly",
+    "switch:2": "vue-demi-switch 2",
+    "switch:3": "vue-demi-switch 3",
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
