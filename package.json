@@ -17,7 +17,7 @@
     "build:3": "pnpm switch:3 && pnpm compile",
     "clean": "rimraf dist",
     "compile": "pnpm clean && rollup -c",
-    "switch:2": "vue-demi-switch 2",
+    "switch:2": "vue-demi-switch 2 vue2",
     "switch:3": "vue-demi-switch 3",
     "test:types": "tsc --noEmit"
   },
@@ -45,6 +45,7 @@
     "rollup-plugin-uglify": "^6.0.4",
     "typescript": "^4.5.3",
     "vite": "^2.7.1",
-    "vue": "^3.2.26"
+    "vue": "^3.2.26",
+    "vue2": "npm:vue@2"
   }
 }
