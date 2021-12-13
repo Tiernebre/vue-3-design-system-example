@@ -1,6 +1,9 @@
 module.exports = {
-  "presets": [
+  presets: [
     "@babel/env",
     "@babel/typescript"
+  ],
+  plugins: [
+    "@vue/babel-plugin-jsx"
   ]
 }
