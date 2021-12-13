@@ -29,7 +29,14 @@ const config = {
       include: ['src/**/*'],
     }),
 
-    postcss()
+    postcss({
+      config: {
+        path: "./postcss.config.js",
+      },
+      extensions: [".css"],
+      extract: true,
+      minimize: true,
+    })
   ],
 
   output: [
