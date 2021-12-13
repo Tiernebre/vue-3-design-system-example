@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue-demi'
+import { ref, defineComponent } from 'vue-demi'
 
 type SomeVueComponentProps = {
   /**
@@ -11,9 +11,20 @@ type SomeVueComponentProps = {
  * COOL BEANS
  */
 const SomeVueComponent = defineComponent<SomeVueComponentProps>({
-  render () {
-    return <div>HI: {this.wtf}</div>
-  }
+  setup (props) {
+    const someStatefulness = ref("Hey this is composable state duderzz")
+
+    return () => {
+      return <div>
+        <p>
+          HI: {props.wtf}
+        </p>
+        <p>
+          {someStatefulness}
+        </p>
+      </div>
+    }
+  },
 })
 
 SomeVueComponent.props = {
