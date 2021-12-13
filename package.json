@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-typescript": "^8.3.0",
     "@types/node": "^16.11.12",
     "@vitejs/plugin-vue": "^2.0.0",
     "rollup": "^2.61.1",
