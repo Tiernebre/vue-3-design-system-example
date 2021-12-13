@@ -25,7 +25,8 @@
     "vue-demi": "^0.12.1"
   },
   "peerDependencies": {
-    "vue": ">= 2.0.0 || >= 3.0.0"
+    "vue": ">= 2.0.0 || >= 3.0.0",
+    "@vue/composition-api": ">= 1.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -38,6 +39,7 @@
     "@vue/babel-plugin-jsx": "^1.1.1",
     "@vue/babel-preset-app": "^4.5.15",
     "@vue/babel-preset-jsx": "^1.2.4",
+    "@vue/composition-api": "^1.4.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.61.1",
     "rollup-plugin-uglify": "^6.0.4",

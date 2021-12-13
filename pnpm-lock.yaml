@@ -11,6 +11,7 @@ specifiers:
   '@vue/babel-plugin-jsx': ^1.1.1
   '@vue/babel-preset-app': ^4.5.15
   '@vue/babel-preset-jsx': ^1.2.4
+  '@vue/composition-api': ^1.4.1
   rimraf: ^3.0.2
   rollup: ^2.61.1
   rollup-plugin-uglify: ^6.0.4
@@ -20,7 +21,7 @@ specifiers:
   vue-demi: ^0.12.1
 
 dependencies:
-  vue-demi: 0.12.1_vue@3.2.26
+  vue-demi: 0.12.1_a512938845c868a2308fc90d5bd53d7c
 
 devDependencies:
   '@babel/core': 7.16.0
@@ -33,6 +34,7 @@ devDependencies:
   '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.16.0
   '@vue/babel-preset-app': 4.5.15_vue@3.2.26
   '@vue/babel-preset-jsx': 1.2.4_@babel+core@7.16.0
+  '@vue/composition-api': 1.4.1_vue@3.2.26
   rimraf: 3.0.2
   rollup: 2.61.1
   rollup-plugin-uglify: 6.0.4_rollup@2.61.1
@@ -1514,6 +1516,15 @@ packages:
       '@vue/shared': 3.2.26
     dev: true
 
+  /@vue/composition-api/1.4.1_vue@3.2.26:
+    resolution: {integrity: sha512-ZTat9ru/rwecveRnFzlO2mduOBpGfnBdXn+WtBcFLV9UsL/D+6nX47RWuLiVdNxNDX0qphGZRC+JDjwt+YTnRA==}
+    peerDependencies:
+      vue: '>= 2.5 < 3'
+    dependencies:
+      tslib: 2.3.1
+      vue: 3.2.26
+    dev: true
+
   /@vue/reactivity-transform/3.2.26:
     resolution: {integrity: sha512-XKMyuCmzNA7nvFlYhdKwD78rcnmPb7q46uoR00zkX6yZrUmcCQ5OikiwUEVbvNhL5hBJuvbSO95jB5zkUon+eQ==}
     dependencies:
@@ -2275,6 +2286,10 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
+  /tslib/2.3.1:
+    resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
+    dev: true
+
   /typescript/4.5.3:
     resolution: {integrity: sha512-eVYaEHALSt+s9LbvgEv4Ef+Tdq7hBiIZgii12xXJnukryt3pMgJf6aKhoCZ3FWQsu6sydEnkg11fYXLzhLBjeQ==}
     engines: {node: '>=4.2.0'}
@@ -2334,7 +2349,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vue-demi/0.12.1_vue@3.2.26:
+  /vue-demi/0.12.1_a512938845c868a2308fc90d5bd53d7c:
     resolution: {integrity: sha512-QL3ny+wX8c6Xm1/EZylbgzdoDolye+VpCXRhI2hug9dJTP3OUJ3lmiKN3CsVV3mOJKwFi0nsstbgob0vG7aoIw==}
     engines: {node: '>=12'}
     hasBin: true
@@ -2346,6 +2361,7 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
+      '@vue/composition-api': 1.4.1_vue@3.2.26
       vue: 3.2.26
     dev: false
 
