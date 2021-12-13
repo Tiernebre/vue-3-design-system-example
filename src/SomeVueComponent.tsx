@@ -11,8 +11,8 @@ type SomeVueComponentProps = {
  * COOL BEANS
  */
 const SomeVueComponent = defineComponent<SomeVueComponentProps>({
-  setup (props) {
-    return <div>HI: {props.wtf}</div>
+  render () {
+    return <div>HI: {this.wtf}</div>
   }
 })
 

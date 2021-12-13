@@ -8,6 +8,7 @@ module.exports = {
       '@vue/babel-preset-jsx',
       {
         compositionAPI: true,
+        injectH: true
       },
     ],
   ].filter(Boolean),
