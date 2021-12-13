@@ -11,6 +11,7 @@ specifiers:
   '@vue/babel-plugin-jsx': ^1.1.1
   '@vue/babel-preset-app': ^4.5.15
   '@vue/babel-preset-jsx': ^1.2.4
+  rimraf: ^3.0.2
   rollup: ^2.61.1
   typescript: ^4.5.3
   vite: ^2.7.1
@@ -31,6 +32,7 @@ devDependencies:
   '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.16.0
   '@vue/babel-preset-app': 4.5.15_vue@3.2.26
   '@vue/babel-preset-jsx': 1.2.4_@babel+core@7.16.0
+  rimraf: 3.0.2
   rollup: 2.61.1
   typescript: 4.5.3
   vite: 2.7.1
@@ -2170,6 +2172,13 @@ packages:
     dependencies:
       is-core-module: 2.8.0
       path-parse: 1.0.7
+    dev: true
+
+  /rimraf/3.0.2:
+    resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    hasBin: true
+    dependencies:
+      glob: 7.2.0
     dev: true
 
   /rollup/2.61.1:

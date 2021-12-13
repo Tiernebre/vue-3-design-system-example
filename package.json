@@ -11,6 +11,7 @@
     }
   },
   "scripts": {
+    "clean": "rimraf dist",
     "dev": "vite",
     "build": "tsc --noEmit && rollup -c && tsc --emitDeclarationOnly",
     "preview": "vite preview"
@@ -32,6 +33,7 @@
     "@vue/babel-plugin-jsx": "^1.1.1",
     "@vue/babel-preset-app": "^4.5.15",
     "@vue/babel-preset-jsx": "^1.2.4",
+    "rimraf": "^3.0.2",
     "rollup": "^2.61.1",
     "typescript": "^4.5.3",
     "vite": "^2.7.1",
