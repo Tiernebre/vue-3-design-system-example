@@ -6,6 +6,13 @@ const config = {
 
   external: [],
 
+  plugins: [
+    babel({
+      extensions: ['.ts', '.tsx'],
+      babelHelpers: 'bundled',
+      include: ['src/**/*'],
+    }),
+  ]
 };
 
 export default config;
