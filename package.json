@@ -11,12 +11,12 @@
     }
   },
   "scripts": {
-    "build": "pnpm switch:3 && pnpm test:types && pnpm build:2 && pnpm build:3",
+    "build": "pnpm clean && pnpm switch:3 && pnpm test:types && pnpm build:2 && pnpm build:3",
     "build:types": "tsc --emitDeclarationOnly",
     "build:2": "pnpm switch:2 && pnpm compile",
     "build:3": "pnpm switch:3 && pnpm compile",
     "clean": "rimraf dist",
-    "compile": "pnpm clean && rollup -c",
+    "compile": "rollup -c",
     "switch:2": "vue-demi-switch 2 vue2",
     "switch:3": "vue-demi-switch 3",
     "test:types": "tsc --noEmit"
