@@ -16,8 +16,12 @@ const config = {
 
   output: [
     {
-      file: 'dist/test.js',
+      file: 'dist/vue-3-dds.es.js',
       format: 'es'
+    },
+    {
+      file: 'dist/vue-3-dds.umd.js',
+      format: 'cjs'
     }
   ]
 };
