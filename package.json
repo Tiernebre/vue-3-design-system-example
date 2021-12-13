@@ -11,9 +11,12 @@
     }
   },
   "scripts": {
-    "clean": "rimraf dist",
     "build": "pnpm test:types && pnpm clean && rollup -c && pnpm build:types",
     "build:types": "tsc --emitDeclarationOnly",
+    "build:2": "pnpm switch:2 && pnpm compile",
+    "build:3": "pnpm switch:3 && pnpm compile",
+    "clean": "rimraf dist",
+    "compile": "pnpm clean && rollup -c",
     "switch:2": "vue-demi-switch 2",
     "switch:3": "vue-demi-switch 3",
     "test:types": "tsc --noEmit"
