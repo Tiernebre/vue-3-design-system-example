@@ -19,7 +19,8 @@
     "compile": "rollup -c",
     "switch:2": "vue-demi-switch 2 vue2",
     "switch:3": "vue-demi-switch 3",
-    "test:types": "tsc --noEmit"
+    "test:types": "tsc --noEmit",
+    "postinstall": "node ./scripts/postinstall.js"
   },
   "dependencies": {
     "vue-demi": "^0.12.1"
