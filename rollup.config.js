@@ -1,12 +1,11 @@
 import { babel } from '@rollup/plugin-babel';
 
+
 const config = {
-  input: 'src/index.js',
-  output: {
-    dir: 'output',
-    format: 'esm'
-  },
-  plugins: [babel({ babelHelpers: 'bundled' })]
+  input: 'src/index.ts',
+
+  external: [],
+
 };
 
 export default config;
