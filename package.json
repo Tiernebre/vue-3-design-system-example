@@ -12,7 +12,9 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsc --noEmit && rollup -c && tsc --emitDeclarationOnly",
+    "build": "pnpm test:types && rollup -c && pnpm build:types",
+    "build:types": "tsc --emitDeclarationOnly",
+    "test:types": "tsc --noEmit"
   },
   "dependencies": {
     "vue-demi": "^0.12.1"
