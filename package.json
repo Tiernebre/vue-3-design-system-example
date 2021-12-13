@@ -4,12 +4,6 @@
   "main": "./dist/vue/vue-ds.umd.js",
   "module": "./dist/vue/vue-ds.es.js",
   "types": "./dist/types/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/my-lib.es.js",
-      "require": "./dist/my-lib.umd.js"
-    }
-  },
   "scripts": {
     "build": "pnpm clean && pnpm switch:3 && pnpm test:types && pnpm build:2 && pnpm build:3 && pnpm build:types",
     "build:types": "tsc --emitDeclarationOnly",
