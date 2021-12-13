@@ -2,6 +2,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import { babel } from '@rollup/plugin-babel';
 import { isVue2 } from 'vue-demi'
+import postcss from 'rollup-plugin-postcss'
 
 const extensions = [
   '.ts', '.tsx'
@@ -16,7 +17,7 @@ const config = {
   external: ['vue', 'vue-demi', '@vue/composition-api'],
 
   plugins: [
-      // Allows node_modules resolution
+    // Allows node_modules resolution
     resolve({ extensions }),
 
     // Allow bundling cjs modules. Rollup doesn't understand cjs
@@ -27,6 +28,13 @@ const config = {
       babelHelpers: 'inline',
       include: ['src/**/*'],
     }),
+
+    postcss({
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      }
+    })
   ],
 
   output: [
