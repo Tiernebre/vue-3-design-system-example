@@ -7,6 +7,9 @@ type SomeVueComponentProps = {
   wtf: string;
 }
 
+/**
+ * COOL BEANS
+ */
 const SomeVueComponent = defineComponent<SomeVueComponentProps>({
   render () {
     return <div>HI: {this.wtf}</div>
