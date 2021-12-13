@@ -1,8 +1,8 @@
 {
   "name": "vue-3-design-system-example",
   "version": "0.0.0",
-  "main": "./dist/vue/vue-ds.umd.js",
-  "module": "./dist/vue/vue-ds.es.js",
+  "main": "./dist/vue-2/vue-ds.umd.js",
+  "module": "./dist/vue-2/vue-ds.es.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "pnpm clean && pnpm switch:3 && pnpm test:types && pnpm build:2 && pnpm build:3 && pnpm build:types",
