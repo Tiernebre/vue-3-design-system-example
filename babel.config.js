@@ -10,7 +10,7 @@ module.exports = {
         compositionAPI: true,
       },
     ],
-  ],
+  ].filter(Boolean),
   plugins: [
     isVue3 && "@vue/babel-plugin-jsx"
   ].filter(Boolean)
