@@ -11,7 +11,7 @@ const extensions = [
 const config = {
   input: 'src/index.ts',
 
-  external: [],
+  external: ['vue', 'vue-demi'],
 
   plugins: [
       // Allows node_modules resolution
