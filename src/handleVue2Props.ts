@@ -1,6 +1,6 @@
-import { isVue3, SetupContext } from 'vue-demi'
+import { isVue3 } from 'vue-demi'
 
-const handleAttrs = (attrs: Record<string, unknown>): Record<string, unknown> => {
+export const handleAttrs = (attrs: Record<string, unknown>): Record<string, unknown> => {
   if (isVue3) {
     return attrs
   }
